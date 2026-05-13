@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBTI 性格测试 · 玄机阁</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <a href="../index.html" class="logo" style="text-decoration:none; color:inherit;">
+      <span class="logo-icon">☯</span>
+      <span class="logo-text">玄机阁</span>
+    </a>
+    <nav class="top-nav">
+      <a href="../index.html">← 返回首页</a>
+    </nav>
+  </header>
+
+  <!-- 进度条（在答题/结果时显示） -->
+  <div class="progress-container">
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-bar"></div>
+    </div>
+    <div class="progress-text" id="progress-text">0 / 28</div>
+  </div>
+
+  <main class="mbti-main">
+
+    <!-- ============== 屏幕 1：欢迎页 ============== -->
+    <section class="mbti-screen active" id="screen-welcome">
+      <div class="welcome-content">
+        <div class="welcome-icon">🧠</div>
+        <h1 class="welcome-title">MBTI 性格测试</h1>
+        <p class="welcome-sub">16 型人格 · 28 道题 · 约 5 分钟</p>
+
+        <div class="welcome-desc">
+          <p>MBTI 是当下最流行的人格分类工具之一，从四个维度刻画你的思维与行为偏好：</p>
+          <ul class="dim-list">
+            <li><strong>E / I</strong> &nbsp; 外向 vs 内向 &nbsp;—— 能量从哪里来</li>
+            <li><strong>S / N</strong> &nbsp; 实感 vs 直觉 &nbsp;—— 如何接收信息</li>
+            <li><strong>T / F</strong> &nbsp; 思考 vs 情感 &nbsp;—— 如何做决定</li>
+            <li><strong>J / P</strong> &nbsp; 判断 vs 感知 &nbsp;—— 如何面对世界</li>
+          </ul>
+          <p class="welcome-tip">作答时凭第一直觉选择，不要过度思考。没有正确答案，只有"更像你"的答案。</p>
+        </div>
+
+        <button class="primary-btn" id="btn-start">
+          <span>开始测试</span>
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============== 屏幕 2：答题页 ============== -->
+    <section class="mbti-screen" id="screen-quiz">
+      <div class="question-card fade-in" id="question-card">
+        <h2 class="question-text" id="question-text">题目加载中……</h2>
+
+        <div class="options">
+          <button class="option-btn" id="option-a">
+            <span class="option-label">A</span>
+            <span class="option-text">选项 A</span>
+          </button>
+          <button class="option-btn" id="option-b">
+            <span class="option-label">B</span>
+            <span class="option-text">选项 B</span>
+          </button>
+        </div>
+
+        <p class="quiz-tip">凭直觉选择，没有对错之分</p>
+      </div>
+    </section>
+
+    <!-- ============== 屏幕 3：结果页 ============== -->
+    <section class="mbti-screen" id="screen-result">
+      <div class="result-card" id="result-box">
+        <!-- 结果内容由 JS 动态填入 -->
+      </div>
+      <div class="result-actions">
+        <button class="primary-btn" id="btn-restart">
+          <span>重新测试</span>
+        </button>
+        <a href="../index.html" class="secondary-btn">返回首页</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 引入 MBTI 测试逻辑脚本 -->
+  <script src="../js/mbti.js"></script>
+</body>
+</html>

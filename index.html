@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+  这是首页 (HomePage)
+  HTML 文件相当于网页的"骨架"，规定了页面上有哪些内容
+-->
+<html lang="zh-CN">
+<head>
+  <!-- meta 标签告诉浏览器一些基本信息 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>玄机阁 · 命理百汇</title>
+
+  <!-- 引入外部样式表（style.css 控制页面外观） -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 顶部导航栏 -->
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-icon">☯</span>
+      <span class="logo-text">玄机阁</span>
+    </div>
+    <nav class="top-nav">
+      <a href="#features">功能</a>
+      <a href="#about">关于</a>
+    </nav>
+  </header>
+
+  <!-- 主视觉区（Hero） -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">命理百汇 · 一念知天机</h1>
+      <p class="hero-subtitle">融合东方玄学与现代心理学，探索你的命运密码</p>
+      <a href="#features" class="hero-btn">开始探索 ↓</a>
+    </div>
+    <!-- 装饰用的八卦符号 -->
+    <div class="hero-decoration">
+      <div class="bagua">☰ ☱ ☲ ☳ ☴ ☵ ☶ ☷</div>
+    </div>
+  </section>
+
+  <!-- 功能区：所有命理工具的入口 -->
+  <section class="features" id="features">
+    <h2 class="section-title">六大命理工具</h2>
+    <p class="section-subtitle">点击下方卡片，进入对应功能</p>
+
+    <div class="feature-grid">
+
+      <!-- MBTI 卡片 -->
+      <a href="pages/mbti.html" class="feature-card" data-feature="mbti">
+        <div class="card-icon">🧠</div>
+        <h3 class="card-title">MBTI 性格测试</h3>
+        <p class="card-desc">16 型人格，洞察你的思维与行为模式</p>
+        <span class="card-tag">心理学</span>
+      </a>
+
+      <!-- 星座卡片 -->
+      <a href="pages/zodiac.html" class="feature-card" data-feature="zodiac">
+        <div class="card-icon">♈</div>
+        <h3 class="card-title">十二星座</h3>
+        <p class="card-desc">根据生日查询你的星座属性与配对</p>
+        <span class="card-tag">西洋占星</span>
+      </a>
+
+      <!-- 每日运势卡片 -->
+      <a href="pages/horoscope.html" class="feature-card" data-feature="horoscope">
+        <div class="card-icon">🌟</div>
+        <h3 class="card-title">每日运势</h3>
+        <p class="card-desc">事业、爱情、财运、健康一目了然</p>
+        <span class="card-tag">每日更新</span>
+      </a>
+
+      <!-- 风水卡片 -->
+      <a href="pages/fengshui.html" class="feature-card" data-feature="fengshui">
+        <div class="card-icon">🏠</div>
+        <h3 class="card-title">家居风水</h3>
+        <p class="card-desc">方位、布局、五行调和，趋吉避凶</p>
+        <span class="card-tag">环境玄学</span>
+      </a>
+
+      <!-- 八字卡片 -->
+      <a href="pages/bazi.html" class="feature-card" data-feature="bazi">
+        <div class="card-icon">📜</div>
+        <h3 class="card-title">生辰八字</h3>
+        <p class="card-desc">天干地支推演，解读你的命盘格局</p>
+        <span class="card-tag">传统命理</span>
+      </a>
+
+      <!-- 算命卡片 -->
+      <a href="pages/fortune.html" class="feature-card" data-feature="fortune">
+        <div class="card-icon">🔮</div>
+        <h3 class="card-title">塔罗占卜</h3>
+        <p class="card-desc">抽牌占卜，解答你心中的疑问</p>
+        <span class="card-tag">即时占卜</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 关于区 -->
+  <section class="about" id="about">
+    <h2 class="section-title">关于玄机阁</h2>
+    <p class="about-text">
+      玄机阁集合东西方各类命理工具于一身，从传统八字风水到现代心理测验，
+      让你在快节奏的生活中，找到属于自己的那份指引。
+    </p>
+    <p class="about-disclaimer">⚠️ 本站内容仅供娱乐参考，请理性对待人生选择。</p>
+  </section>
+
+  <!-- 底部 -->
+  <footer class="site-footer">
+    <p>© 2026 玄机阁 · Made with ❤ in China</p>
+  </footer>
+
+  <!-- 引入 JavaScript（让页面有交互动作） -->
+  <script src="js/main.js"></script>
+</body>
+</html>

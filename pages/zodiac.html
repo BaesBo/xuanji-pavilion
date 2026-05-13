@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>十二星座 · 玄机阁</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../index.html" class="logo" style="text-decoration:none; color:inherit;">
+      <span class="logo-icon">☯</span>
+      <span class="logo-text">玄机阁</span>
+    </a>
+    <nav class="top-nav">
+      <a href="../index.html">← 返回首页</a>
+    </nav>
+  </header>
+
+  <main class="zodiac-main">
+
+    <!-- 输入区 -->
+    <section class="zodiac-input-section">
+      <div class="zodiac-input-icon">♈</div>
+      <h1 class="zodiac-page-title">查询你的星座</h1>
+      <p class="zodiac-page-sub">输入你的生日，解锁星座属性、性格与配对</p>
+
+      <div class="date-input-wrapper">
+        <label for="birth-date" class="date-input-label">出生日期</label>
+        <input type="date" id="birth-date" class="date-input">
+        <p class="date-input-hint">年份不影响星座判定</p>
+      </div>
+    </section>
+
+    <!-- 结果区：由 zodiac.js 动态渲染 -->
+    <section class="zodiac-result" id="result-area">
+      <p class="zodiac-placeholder" id="result-placeholder">请输入生日以查询星座</p>
+    </section>
+
+  </main>
+
+  <script src="../js/zodiac.js"></script>
+</body>
+</html>

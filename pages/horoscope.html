@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日运势 · 玄机阁</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../index.html" class="logo" style="text-decoration:none; color:inherit;">
+      <span class="logo-icon">☯</span>
+      <span class="logo-text">玄机阁</span>
+    </a>
+    <nav class="top-nav">
+      <a href="../index.html">← 返回首页</a>
+    </nav>
+  </header>
+
+  <main class="horoscope-main">
+
+    <!-- 今日日期 + 12 星座选择 -->
+    <section class="horoscope-input-section">
+      <div id="today-date" class="today-date"></div>
+
+      <p class="horoscope-pick-hint">选择你的星座，查看今日运势</p>
+
+      <div id="sign-grid" class="sign-grid">
+        <!-- 12 个按钮由 JS 渲染 -->
+      </div>
+    </section>
+
+    <!-- 结果区：JS 动态渲染 -->
+    <section class="horoscope-result" id="result-area">
+      <p class="horoscope-placeholder">点击上方任意星座查看今日运势</p>
+    </section>
+
+  </main>
+
+  <script src="../js/horoscope.js"></script>
+</body>
+</html>
