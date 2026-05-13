@@ -215,7 +215,7 @@ function renderResult() {
   els.resultArea.innerHTML = `
     <div class="zodiac-card">
       <div class="zodiac-header">
-        <div class="zodiac-symbol">${sign.icon}</div>
+        <div class="zodiac-symbol"><img src="../images/zodiac/${signKey}.png" alt="${sign.name}"></div>
         <div class="zodiac-title-block">
           <h2 class="zodiac-name">${sign.name}</h2>
           <p class="zodiac-english">${sign.english}</p>
@@ -283,7 +283,7 @@ function renderMatchMini(signKey) {
   const s = ZODIACS[signKey];
   return `
     <div class="match-mini">
-      <span class="match-mini-icon">${s.icon}</span>
+      <img src="../images/zodiac/${signKey}.png" alt="${s.name}" class="match-mini-icon">
       <span class="match-mini-name">${s.name}</span>
     </div>
   `;

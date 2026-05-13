@@ -260,7 +260,7 @@ function renderSignGrid() {
   els.signGrid.innerHTML = SIGNS.map(function (s) {
     return `
       <button class="sign-chip" data-sign="${s.key}" data-element="${s.element}">
-        <span class="sign-chip-icon">${s.icon}</span>
+        <img src="../images/zodiac/${s.key}.png" alt="${s.name}" class="sign-chip-icon">
         <span class="sign-chip-name">${s.name}</span>
       </button>
     `;
@@ -292,7 +292,7 @@ function renderResult(sign, fortune) {
   els.resultArea.innerHTML = `
     <div class="fortune-card">
       <div class="fortune-header">
-        <div class="fortune-symbol">${sign.icon}</div>
+        <div class="fortune-symbol"><img src="../images/zodiac/${sign.key}.png" alt="${sign.name}"></div>
         <div class="fortune-sign-info">
           <h2 class="fortune-sign-name">${sign.name}座 · 今日运势</h2>
           <div class="fortune-overall">

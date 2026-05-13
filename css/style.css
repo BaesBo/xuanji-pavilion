@@ -979,11 +979,16 @@ body {
 }
 
 .zodiac-symbol {
-  font-size: 5rem;
-  color: var(--element-color);
-  text-shadow: 0 0 30px var(--element-color);
-  line-height: 1;
   flex-shrink: 0;
+  line-height: 0;
+}
+
+.zodiac-symbol img {
+  display: block;
+  width: 160px;
+  height: auto;
+  border-radius: var(--radius-md);
+  filter: drop-shadow(0 0 24px var(--element-color));
 }
 
 .zodiac-title-block {
@@ -1154,9 +1159,11 @@ body {
 }
 
 .match-mini-icon {
-  font-size: 1.6rem;
-  color: var(--color-gold);
+  width: 56px;
+  height: auto;
+  border-radius: var(--radius-sm);
   flex-shrink: 0;
+  display: block;
 }
 
 .match-mini-name {
@@ -1169,7 +1176,7 @@ body {
   .zodiac-input-section { padding: 30px 16px; }
   .zodiac-page-title { font-size: 1.7rem; letter-spacing: 3px; }
   .zodiac-card { padding: 30px 20px; }
-  .zodiac-symbol { font-size: 3.5rem; }
+  .zodiac-symbol img { width: 110px; }
   .zodiac-name { font-size: 1.4rem; letter-spacing: 3px; }
   .zodiac-meta { grid-template-columns: 1fr; }
   .match-grid { grid-template-columns: 1fr; }
@@ -1256,8 +1263,19 @@ body {
 }
 
 .sign-chip-icon {
-  font-size: 1.6rem;
-  line-height: 1;
+  width: 68px;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+  transition: filter 0.3s, transform 0.35s var(--ease-out);
+}
+
+.sign-chip:hover .sign-chip-icon {
+  transform: scale(1.05);
+}
+
+.sign-chip.active .sign-chip-icon {
+  filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.6));
 }
 
 .sign-chip-name {
@@ -1311,11 +1329,16 @@ body {
 }
 
 .fortune-symbol {
-  font-size: 4rem;
-  color: var(--element-color);
-  text-shadow: 0 0 30px var(--element-color);
-  line-height: 1;
   flex-shrink: 0;
+  line-height: 0;
+}
+
+.fortune-symbol img {
+  display: block;
+  width: 130px;
+  height: auto;
+  border-radius: var(--radius-md);
+  filter: drop-shadow(0 0 20px var(--element-color));
 }
 
 .fortune-sign-info {
@@ -1490,7 +1513,8 @@ body {
   .date-big { font-size: 2rem; letter-spacing: 4px; }
   .sign-grid { grid-template-columns: repeat(4, 1fr); }
   .fortune-card { padding: 30px 20px; }
-  .fortune-symbol { font-size: 3rem; }
+  .fortune-symbol img { width: 96px; }
+  .sign-chip-icon { width: 52px; }
   .fortune-sections { grid-template-columns: 1fr; }
   .lucky-row { grid-template-columns: 1fr; gap: 12px; }
 }
